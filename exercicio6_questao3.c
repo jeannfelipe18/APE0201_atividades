@@ -1,13 +1,10 @@
-#include<stdio.h>
-#include<math.h>
-
 int main(){
 
     int codPrato, codSobremesa, codSuco, calorias, totalCalorias;
 
-    printf("-----------Cardapio------------");
+    printf("------Cardapio------");
 
-    printf("\nPratos: \t\t 1 - Vegetariano \n\t\t 2 - Peixe \n\t\t 3 - Frango \n\t\t 4 - Carne \n\t\t");
+    printf("\nPratos: \n\t\t 1 - Vegetariano \n\t\t 2 - Peixe \n\t\t 3 - Frango \n\t\t 4 - Carne \n\t\t");
 
     printf("Digite o codigo do prato:");
     scanf("%d", &codPrato);
@@ -28,7 +25,7 @@ int main(){
         default:
         printf("Codigo do prato invalido - siga para a sobremesa");
     }
-    printf("\nSobremesas: \t\t 1 - Abacaxi \n\t\t 2 - Sorvete Diet \n\t\t 3 - Mouse Diet \n\t\t 4 - Mouse Chocolate \n\t\t");
+    printf("\nSobremesas: \n\t\t 1 - Abacaxi \n\t\t 2 - Sorvete Diet \n\t\t 3 - Mouse Diet \n\t\t 4 - Mouse Chocolate \n\t\t");
 
     printf("Digite o codigo da sobremesa:");
     scanf("%d", &codSobremesa);
@@ -39,18 +36,18 @@ int main(){
         totalCalorias += 75;
         break;
         case 2:
-        totalCalorias: += 110;
+        totalCalorias+= 110;
         break;
         case 3:
-        totalCalorias: += 170;
+        totalCalorias+= 170;
         break;
         case 4:
-        totalCalorias: += 200;
+        totalCalorias+= 200;
         break;
         default:
         printf("Codigo da sobremesa invalido -  siga para o suco");
     }
-    printf("\nSucoss: \t\t 1 - cha \n\t\t 2 - Laranja \n\t\t 3 - Melao \n\t\t 4 - Refrigerante Diet \n\t\t");
+    printf("\nSucos: \n\t\t 1 - cha \n\t\t 2 - Laranja \n\t\t 3 - Melao \n\t\t 4 - Refrigerante Diet \n\t\t");
 
     printf("Digite o codigo do suco:");
     scanf("%d", &codSuco);
@@ -61,13 +58,13 @@ int main(){
         totalCalorias += 20;
         break;
         case 2:
-        totalCalorias: += 70;
+        totalCalorias+= 70;
         break;
         case 3:
-        totalCalorias: += 100;
+        totalCalorias+= 100;
         break;
         case 4:
-        totalCalorias: += 65;
+        totalCalorias+= 65;
         break;
         default:
         printf("Codigo do suco invalido");
